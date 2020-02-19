@@ -117,10 +117,12 @@
     <Compile Include="Assets\Game\Level_Dont_Touch\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Game\Level_Dont_Touch\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Game\Level_Dont_Touch\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\HitMarkerCleanUp.cs" />
     <Compile Include="Assets\Scripts\LookX.cs" />
     <Compile Include="Assets\Scripts\LookY.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Shark.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <None Include="Assets\Game\Level_Dont_Touch\Environment_Model\Cinema Suite\Cinema Themes\ReadMe.txt" />
     <None Include="Assets\Game\Level_Dont_Touch\Environment_Model\Fonts\OFL.txt" />

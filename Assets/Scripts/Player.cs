@@ -19,8 +19,8 @@ public class Player : MonoBehaviour
     private int _currentAmmo;
     private int _maxAmmo = 50;
     private bool _isReloading = false;
-
     private UIManager _uiManager;
+    public bool hasCoin = false;
 
     // Start is called before the first frame update
     void Start()
