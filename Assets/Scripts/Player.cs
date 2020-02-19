@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
     private bool _isReloading = false;
     private UIManager _uiManager;
     public bool hasCoin = false;
+    [SerializeField]
+    private GameObject _weapon;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +88,12 @@ public class Player : MonoBehaviour
             // not facing up. The Instantiated object needs to be type casted as GameObject
             GameObject hitMarker = Instantiate(_hitMarkerPrefab, hitInfo.point, Quaternion.LookRotation(hitInfo.normal)) as GameObject;
             Destroy(hitMarker, 1f);
+
+            Destructable crate = hitInfo.transform.GetComponent<Destructable>();
+            if(crate != null)
+            {
+                crate.DestroyCrate();
+            }
         }
     }
 
@@ -107,5 +115,10 @@ public class Player : MonoBehaviour
         _currentAmmo = _maxAmmo;
         _uiManager.UpdateAmmo(_currentAmmo);
         _isReloading = false;
+    }
+
+    public void EnableWeapons()
+    {
+        _weapon.SetActive(true);
     }
 }

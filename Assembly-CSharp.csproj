@@ -118,6 +118,7 @@
     <Compile Include="Assets\Game\Level_Dont_Touch\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Game\Level_Dont_Touch\Standard Assets\Utility\WaypointProgressTracker.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\Destructable.cs" />
     <Compile Include="Assets\Scripts\HitMarkerCleanUp.cs" />
     <Compile Include="Assets\Scripts\LookX.cs" />
     <Compile Include="Assets\Scripts\LookY.cs" />
